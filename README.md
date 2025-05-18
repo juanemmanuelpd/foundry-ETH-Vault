@@ -1,66 +1,28 @@
-## Foundry
-
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# Calculator
+## Overview 🪙
+The same repository ETH Vault in this profile but now tested with Foundry.
+## Features 📃
+* Testing - Verify the security and efficiency of this smart contract with different testing functions in foundry
+* Deposit -> Deposit the amount of ETH you want, without limits.
+* Withdraw -> Withdraw ETH easily.
+* Admin -> Have the power to perform functions only permitted for the user who deploys this smart contract.
+* Limit -> To prevent theft or questionable behavior, a certain limit of ETH is allowed to be withdrawn per hour.
+* Black list -> Add users to a blacklist and prevent them from depositing or withdrawing within this bank.
+* Pause -> In case of emergency, you can pause all transactions within the bank to prevent unwanted losses to your users' assets.
+* Adjustable -> Set the amount of ETH you want as the withdrawal limit per hour.
+## Technical details ⚙️
+* Framework CLI -> Foundry.
+* Forge version -> 1.1.0-stable.
+* Solidity compiler version -> 0.8.24.
+## Deploying the contract 🛠️
+1. Clone the GitHub repository.
+2. Open Visual Studio Code (you should already have Foundry installed).
+3. Select "File" > "Open Folder", select the cloned repository folder.
+4. In the project navigation bar, open the "ETHVault.sol" file located in the "src" folder.
+5. In the toolbar above, select "Terminal" > "New Terminal".
+6. Select the "Git bash" terminal (previously installed).
+7. Run the `forge build` command to compile the script.
+8. In the project navigation bar, open the "ETH-Vault-Test.t.sol" file located in the "test" folder.
+9. Run the `forge build` command to compile the script.
+10. Run the command `forge test --match-test` followed by the name of a test function to test it and verify the smart contract functions are working correctly. For example, run `forge test --match-test testIfNotAdminCallsModifiyWithdrawReverts` to test the `testIfNotAdminCallsModifiyWithdrawReverts` function.
+11. Run `forge coverage` to generate a code coverage report, which allows you to verify which parts of the "calculator.sol" script code (in the "src" folder) are executed by the tests. This helps identify areas outside the coverage that could be exposed to errors/vulnerabilities.
