@@ -34,4 +34,13 @@ The same repository ETH Vault in this profile but now tested with Foundry.
 * unpauseTransactions() -> Resume all bank transactions. Only admin.
 * addToBlackList() ->  Add a user to the blacklist to prevent them from making deposits and withdrawals within the bank. Only admin.
 * removeFromBlackList() -> Remove a user from the blacklist. Only admin.
-* 
+## Testing functions (Unit testing) ⌨️
+* testFirstMaxWithdrawPerHour()
+* testIfNotAdminCallsModifiyWithdrawReverts() -> 
+* testIfNotAdminCallsPauseReverts() ->
+* testIfNotAdminCallsUnpauseReverts() ->
+* testIfNotAdminCallsAddToBlackListReverts() ->
+* testIfPausedWhenDepositReverts() ->
+* testIfPausedWhenWhitdrawReverts() ->
+## Testing functions (Fuzzzing testing) 🎲
+* testFuzzingModifyMaxWithdrawPerHour() ->
