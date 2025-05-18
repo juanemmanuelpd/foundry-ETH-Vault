@@ -35,12 +35,14 @@ The same repository ETH Vault in this profile but now tested with Foundry.
 * addToBlackList() ->  Add a user to the blacklist to prevent them from making deposits and withdrawals within the bank. Only admin.
 * removeFromBlackList() -> Remove a user from the blacklist. Only admin.
 ## Testing functions (Unit testing) ⌨️
-* testFirstMaxWithdrawPerHour()
-* testIfNotAdminCallsModifiyWithdrawReverts() -> 
-* testIfNotAdminCallsPauseReverts() ->
-* testIfNotAdminCallsUnpauseReverts() ->
-* testIfNotAdminCallsAddToBlackListReverts() ->
-* testIfPausedWhenDepositReverts() ->
-* testIfPausedWhenWhitdrawReverts() ->
+* testFirstMaxWithdrawPerHour() -> Verify that the value of maxWithdrawPerHour returned by the code is the same as the value declared in the variable.
+* testIfNotAdminCallsModifiyWithdrawReverts() -> Verify that the smart contract reverts if the modifyMaxWithdrawPerHour function is not called by the admin.
+* testIfNotAdminCallsPauseReverts() -> Verify that the smart contract reverts if the function to pause the contract is not called by the admin.
+* testIfNotAdminCallsUnpauseReverts() -> Verify that the smart contract reverts if the admin does not call the function to unpause the contract.
+* testIfNotAdminCallsAddToBlackListReverts() -> Verify that the smart contract reverts if the admin does not call the function to add users to the blacklist.
+* testIfPausedWhenDepositReverts() -> Verifies that the smart contract reverts if a deposit is attempted while the contract is paused.
+* testIfPausedWhenWhitdrawReverts() -> Verifies that the smart contract reverts if a withdrawal is attempted while the contract is paused.
 ## Testing functions (Fuzzzing testing) 🎲
-* testFuzzingModifyMaxWithdrawPerHour() ->
+* testFuzzingModifyMaxWithdrawPerHour() -> Verify that only the admin can correctly modify the maxWithdrawPerHour using several random values ​​for the testing function.
+
+CODE IS LAW!
