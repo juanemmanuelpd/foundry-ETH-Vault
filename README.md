@@ -3,6 +3,7 @@
 The same repository ETH Vault in this profile but now tested with Foundry.
 ## Features 📃
 * Testing - Verify the security and efficiency of this smart contract with different testing functions in foundry
+* Fuzzing - The "foundry.toml" file is modified so that the fuzzing functions run with 1,000 different inputs.
 * Deposit -> Deposit the amount of ETH you want, without limits.
 * Withdraw -> Withdraw ETH easily.
 * Admin -> Have the power to perform functions only permitted for the user who deploys this smart contract.
