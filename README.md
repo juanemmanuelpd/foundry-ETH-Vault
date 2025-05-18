@@ -1,4 +1,4 @@
-# Calculator
+# Foundry ETH Vault
 ## Overview 🪙
 The same repository ETH Vault in this profile but now tested with Foundry.
 ## Features 📃
