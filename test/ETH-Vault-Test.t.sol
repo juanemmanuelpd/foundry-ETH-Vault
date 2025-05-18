@@ -74,4 +74,11 @@ contract ETHVaultTest is Test {
         vm.stopPrank();
     }
 
+   // Fuzzing testing
+    function testFuzzingModifyMaxWithdrawPerHour(uint256 newMaxWithDrawPerHour_) public{
+        vm.startPrank(admin);
+        vaultTest.modifyMaxWithdrawPerHour(newMaxWithDrawPerHour_);
+        vm.stopPrank();
+    }
+
 }
