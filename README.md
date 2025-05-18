@@ -26,3 +26,12 @@ The same repository ETH Vault in this profile but now tested with Foundry.
 9. Run the `forge build` command to compile the script.
 10. Run the command `forge test --match-test` followed by the name of a test function to test it and verify the smart contract functions are working correctly. For example, run `forge test --match-test testIfNotAdminCallsModifiyWithdrawReverts` to test the `testIfNotAdminCallsModifiyWithdrawReverts` function.
 11. Run `forge coverage` to generate a code coverage report, which allows you to verify which parts of the "calculator.sol" script code (in the "src" folder) are executed by the tests. This helps identify areas outside the coverage that could be exposed to errors/vulnerabilities.
+## Functions 💻
+* depositETH() -> Deposit ETH from your address to the bank.
+* withdrawETH() -> Withdraw ETH from the bank to your address.
+* modifyMaxWithdrawPerHour() ->  Sets the limit of ETH (in WEI) that can be withdrawn per hour. Only admin.
+* pauseTransactions() -> Pause all bank transactions. Only admin.
+* unpauseTransactions() -> Resume all bank transactions. Only admin.
+* addToBlackList() ->  Add a user to the blacklist to prevent them from making deposits and withdrawals within the bank. Only admin.
+* removeFromBlackList() -> Remove a user from the blacklist. Only admin.
+* 
