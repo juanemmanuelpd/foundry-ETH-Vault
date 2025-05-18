@@ -1,6 +1,6 @@
 # Foundry ETH Vault
 ## Overview 🪙
-The same repository ETH Vault in this profile but now tested with Foundry.
+The same ETH crypto bank (ETH Vault) in this profile but now tested with Foundry.
 ## Features 📃
 * Testing - Verify the security and efficiency of this smart contract with different testing functions in foundry
 * Fuzzing - The "foundry.toml" file is modified so that the fuzzing functions run with 1,000 different inputs.
