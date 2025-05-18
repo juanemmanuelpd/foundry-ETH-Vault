@@ -43,7 +43,7 @@ The same ETH crypto bank (ETH Vault) in this profile but now tested with Foundry
 * `testIfNotAdminCallsAddToBlackListReverts()` -> Verify that the smart contract reverts if the admin does not call the function to add users to the blacklist.
 * `testIfPausedWhenDepositReverts()` -> Verifies that the smart contract reverts if a deposit is attempted while the contract is paused.
 * `testIfPausedWhenWhitdrawReverts()` -> Verifies that the smart contract reverts if a withdrawal is attempted while the contract is paused.
-## Testing functions (Fuzzzing testing) 🎲
+## Testing functions (Fuzzing testing) 🎲
 * `testFuzzingModifyMaxWithdrawPerHour()` -> Verify that only the admin can correctly modify the maxWithdrawPerHour using several random values ​​for the testing function.
 
 CODE IS LAW!
